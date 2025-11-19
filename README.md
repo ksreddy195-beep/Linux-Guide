@@ -1,6 +1,5 @@
 # Ultimate Linux Guide
 
-
 Following topics are covered as part of the course and documentation.
 
 - Fundamentals of Linux
