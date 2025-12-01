@@ -2,7 +2,7 @@ name: cron job
 
 on:
   push:
-    branches: [main]
+    branches: [actions/workflows]
   workflow_dispatch:
   schedule: 
     - cron: "* * * * *"
