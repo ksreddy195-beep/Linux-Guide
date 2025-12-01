@@ -17,3 +17,12 @@ jobs:
         run: |
           echo "directories in root"
           find . -maxdepth 1 -type d ! -name ".git" ! -name "." -printf "%f\n"
+      - name: list the files in process management
+        run: |
+          echo "list the files in process management"
+          ls -al "07-Process-Management"
+      - name: list the contents in files
+        run : |
+          echo "list contents in files"
+          cd 07-Process-Management
+          cat README.md
