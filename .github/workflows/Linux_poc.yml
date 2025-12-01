@@ -2,22 +2,18 @@ name: list the directories under root folder
 
 on:
   push:
-    branch: [main]
-
+    branches: [main]
   workflow_dispatch:
 
 jobs:
   list-folder:
     runs-on: ubuntu-latest
 
-  steps: 
-    - name: checkout repository
-      uses: actions/checkout@v3
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v3
 
-    - name: list directories in root project
-      run: | 
-       echo "directories in root"
-       find . -maxdepth 1 -type d ! -name ".git" ! -name "." -printf "%f\n"
-
-
-
+      - name: list directories in root project
+        run: |
+          echo "directories in root"
+          find . -maxdepth 1 -type d ! -name ".git" ! -name "." -printf "%f\n"
