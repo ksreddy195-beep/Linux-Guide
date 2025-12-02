@@ -1,8 +1,7 @@
 name: list the directories under root folder
 
 on:
-  push:
-    branches: [main]
+ 
   workflow_dispatch:
 
 jobs:
